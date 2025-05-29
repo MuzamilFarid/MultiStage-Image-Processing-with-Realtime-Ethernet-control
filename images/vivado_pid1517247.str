@@ -1,0 +1,493 @@
+/*
+
+Xilinx Vivado v2022.1 (64-bit) [Major: 2022, Minor: 1]
+SW Build: 3526262 on Mon Apr 18 15:47:01 MDT 2022
+IP Build: 3524634 on Mon Apr 18 20:55:01 MDT 2022
+
+Process ID (PID): 1517247
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed May 28 23:25:02 CEST 2025
+Time zone: 	Central European Standard Time (Europe/Berlin)
+
+OS: Fedora release 42 (Adams)
+OS Version: 6.14.0-63.fc42.x86_64
+OS Architecture: amd64
+Available processors (cores): 8
+
+Display: 0
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	/home/muzamilfarid/Vivado/2022.1/tps/lnx64/jre11.0.11_9
+Java executable: 	/home/muzamilfarid/Vivado/2022.1/tps/lnx64/jre11.0.11_9/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Djdk.gtk.version=2, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m, -Xrs]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	muzamilfarid
+User home directory: /home/muzamilfarid
+User working directory: /home/muzamilfarid/Coraz7_Projects/Image-Processing-Systen-with-realtime-Camera/images
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /home/muzamilfarid/Vivado
+HDI_APPROOT: /home/muzamilfarid/Vivado/2022.1
+RDI_DATADIR: /home/muzamilfarid/Vivado/2022.1/data
+RDI_BINDIR: /home/muzamilfarid/Vivado/2022.1/bin
+
+Vivado preferences file: /home/muzamilfarid/.Xilinx/Vivado/2022.1/vivado.xml
+Vivado preferences directory: /home/muzamilfarid/.Xilinx/Vivado/2022.1/
+Vivado layouts directory: /home/muzamilfarid/.Xilinx/Vivado/2022.1/data/layouts
+PlanAhead jar file: 	/home/muzamilfarid/Vivado/2022.1/lib/classes/planAhead.jar
+Vivado log file: 	/home/muzamilfarid/Coraz7_Projects/Image-Processing-Systen-with-realtime-Camera/images/vivado.log
+Vivado journal file: 	/home/muzamilfarid/Coraz7_Projects/Image-Processing-Systen-with-realtime-Camera/images/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-1517247-fedora
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /home/muzamilfarid/Vivado/2022.1/ids_lite/ISE
+XILINX_DSP: /home/muzamilfarid/Vivado/2022.1/ids_lite/ISE
+XILINX_HLS: /home/muzamilfarid/Vitis_HLS/2022.1
+XILINX_PLANAHEAD: /home/muzamilfarid/Vivado/2022.1
+XILINX_SDK: /home/muzamilfarid/Vitis/2022.1
+XILINX_VITIS: /home/muzamilfarid/Vitis/2022.1
+XILINX_VIVADO: /home/muzamilfarid/Vivado/2022.1
+XILINX_VIVADO_HLS: /home/muzamilfarid/Vivado/2022.1
+
+
+GUI allocated memory:	411 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,994 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// Tcl Message: Sourcing tcl script '/home/muzamilfarid/.Xilinx/Vivado/Vivado_init.tcl' 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,833 MB. GUI used memory: 58 MB. Current time: 5/28/25, 11:25:03 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+selectButton(PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, "Create Project"); // y
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+selectButton("NEXT", "Next >"); // JButton
+// Elapsed time: 21 seconds
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "Image_Processing_System"); // aa
+selectButton(PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, (String) null); // s
+setFolderChooser("/home/muzamilfarid/Coraz7_Projects/Image-Processing-Systen-with-realtime-Camera");
+selectButton("NEXT", "Next >"); // JButton
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+// [GUI Memory]: 122 MB (+125639kb) [00:01:09]
+// [Engine Memory]: 1,902 MB (+1843309kb) [00:01:09]
+selectButton("NEXT", "Next >"); // JButton
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, (HResource) null, "Boards", 1); // i
+selectTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Cora Z7-07S ; Cora Z7-07S ; Cora Z7-07S ; digilentinc.com ; 1.1 ; xc7z007sclg400-1 ; 400 ; B.0 ; 100 ; 14400 ; 28800 ; 50 ; 0 ; 66 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 2 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 11, "Cora Z7-07S", 0, false); // ah
+selectButton("NEXT", "Next >"); // JButton
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: create_project Image_Processing_System /home/muzamilfarid/Coraz7_Projects/Image-Processing-Systen-with-realtime-Camera/Image_Processing_System -part xc7z007sclg400-1 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1782 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/muzamilfarid/Vivado/2022.1/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: BOARD_MODIFIED
+// Tcl Message: set_property board_part digilentinc.com:cora-z7-07s:part0:1.1 [current_project] 
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 60 seconds
+dismissDialog("Create Project"); // bA
+dismissDialog("New Project"); // f
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aL
+// Elapsed time: 81 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 67, 12); // dT
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 320, 263); // dT
+// Elapsed time: 21 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 4, 13); // dT
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 124, 18); // dT
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 1, 7); // dT
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 45, 11, false, false, false, true, false); // dT - Popup Trigger
+selectMenuItem(RDIResource.TclConsoleView_COPY, "Copy"); // ar
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 1160, 42); // dT
+typeControlKey(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, "RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR", 'c'); // dT
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 569, 111); // dT
+typeControlKey(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, "RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR", 'c'); // dT
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Create Block Design]", 6, false); // n
+// Run Command: PAResourceCommand.PACommandNames_CREATE_NEW_DIAGRAM
+// Elapsed time: 21 seconds
+setText(PAResourceAtoD.CreateNewDiagramDialog_DESIGN_NAME, "Ov7670_Image_Proc_System"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'U' command handler elapsed time: 21 seconds
+dismissDialog("Create Block Design"); // aX
+// TclEventType: LOAD_FEATURE
+// Tcl Message: create_bd_design "Ov7670_Image_Proc_System" 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Wrote  : </home/muzamilfarid/Coraz7_Projects/Image-Processing-Systen-with-realtime-Camera/Image_Processing_System/Image_Processing_System.srcs/sources_1/bd/Ov7670_Image_Proc_System/Ov7670_Image_Proc_System.bd>  
+// TclEventType: RSB_OPEN_DIAGRAM
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Create Block Design"); // bA
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 310, 128); // dT
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 73, 125, false, false, false, true, false); // dT - Popup Trigger
+selectMenuItem(RDIResource.TclConsoleView_COPY, "Copy"); // ar
+// [Engine Memory]: 2,027 MB (+30806kb) [00:04:30]
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,973 MB. GUI used memory: 68 MB. Current time: 5/28/25, 11:29:23 PM CEST
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 307, 124); // dT
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 86, 128, false, false, false, true, false); // dT - Popup Trigger
+selectMenuItem(RDIResource.TclConsoleView_COPY, "Copy"); // ar
+// Elapsed time: 11 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 300, 189); // dT
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 287, 163); // dT
+typeControlKey(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, "RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR", 'c'); // dT
+// Elapsed time: 18 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, (String) null); // D
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "block"); // OverlayTextField
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator", 1, "Block Memory Generator", 0, false); // L
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator", 1, "Block Memory Generator", 0, false); // L
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator", 1); // L
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator", 1, "Block Memory Generator", 0, false, false, false, false, false, true); // L - Double Click
+// TclEventType: LOAD_FEATURE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0 
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bA
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// Elapsed time: 21 seconds
+selectComboBox("Memory Type (Memory_Type)", "True Dual Port RAM", 1); // E
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port B Options", 2); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 3); // bj
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // bj
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Tcl Command: 'set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Use_RSTB_Pin {true} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100}] [get_bd_cells blk_mem_gen_0]'
+dismissDialog("Re-customize IP"); // r
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Use_RSTB_Pin {true} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100}] [get_bd_cells blk_mem_gen_0] 
+// [GUI Memory]: 129 MB (+620kb) [00:06:15]
+// Tcl Command: 'set_property location {1 36 -213} [get_bd_cells blk_mem_gen_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1 36 -213} [get_bd_cells blk_mem_gen_0] 
+// Tcl Command: 'set_property location {1 82 -216} [get_bd_cells blk_mem_gen_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1 82 -216} [get_bd_cells blk_mem_gen_0] 
+// Elapsed time: 16 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 60, 213); // dT
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 14, 191, false, false, false, true, false); // dT - Popup Trigger
+selectMenuItem(RDIResource.TclConsoleView_COPY, "Copy"); // ar
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 491, 303); // dT
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 5, 265); // dT
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 18, 274); // dT
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 2, 266); // dT
+typeControlKey(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, "RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR", 'c'); // dT
+// Elapsed time: 14 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 244, 104, 1225, 612, false, false, false, true, false); // hw - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ao
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ao
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_IP, "Add IP..."); // ar
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "Zy"); // OverlayTextField
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "Zynq"); // OverlayTextField
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "ZYNQ7 Processing System", 0, "ZYNQ7 Processing System", 0, false); // L
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "ZYNQ7 Processing System", 0); // L
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "ZYNQ7 Processing System", 0, "ZYNQ7 Processing System", 0, false, false, false, false, false, true); // L - Double Click
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// [GUI Memory]: 136 MB (+774kb) [00:07:16]
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bA
+// JavaFX intialization before: 1748467926832
+// JavaFX initialization after: 1748467927040
+// WARNING: HTimer (Open addressing views timer) is taking 273ms to process. Increasing delay to 1300 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,182 MB. GUI used memory: 93 MB. Current time: 5/28/25, 11:32:08 PM CEST
+// [Engine Memory]: 2,222 MB (+97789kb) [00:07:19]
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 61, 350); // dT
+typeControlKey(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, "RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR", 'c'); // dT
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_BLOCK_AUTOMATION, "Run Block Automation"); // g
+// [GUI Memory]: 143 MB (+148kb) [00:07:34]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Run Block Automation"); // O
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0] 
+// [GUI Memory]: 170 MB (+20578kb) [00:07:42]
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Run Block Automation"); // bA
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 1381, 368); // dT
+typeControlKey(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, "RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR", 'c'); // dT
+typeControlKey(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, "RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR", 'c'); // dT
+// Elapsed time: 45 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aL
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ar
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // cm
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "edge_detection_IP"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Tcl Command: 'file mkdir /home/muzamilfarid/Coraz7_Projects/Image-Processing-Systen-with-realtime-Camera/Image_Processing_System/Image_Processing_System.srcs/sources_1/new'
+dismissDialog("Create Source File"); // F
+// Tcl Message: file mkdir /home/muzamilfarid/Coraz7_Projects/Image-Processing-Systen-with-realtime-Camera/Image_Processing_System/Image_Processing_System.srcs/sources_1/new 
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // cm
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "blurr"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 25 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open /home/muzamilfarid/Coraz7_Projects/Image-Processing-Systen-with-realtime-Camera/Image_Processing_System/Image_Processing_System.srcs/sources_1/new/blurr.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /home/muzamilfarid/Coraz7_Projects/Image-Processing-Systen-with-realtime-Camera/Image_Processing_System/Image_Processing_System.srcs/sources_1/new/blurr.sv 
+// Tcl Message: close [ open /home/muzamilfarid/Coraz7_Projects/Image-Processing-Systen-with-realtime-Camera/Image_Processing_System/Image_Processing_System.srcs/sources_1/new/edge_detection_IP.sv w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /home/muzamilfarid/Coraz7_Projects/Image-Processing-Systen-with-realtime-Camera/Image_Processing_System/Image_Processing_System.srcs/sources_1/new/edge_detection_IP.sv 
+dismissDialog("Add Sources"); // bA
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Modules"); // I
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,279 MB. GUI used memory: 105 MB. Current time: 5/28/25, 11:34:08 PM CEST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 2,336 MB (+3383kb) [00:09:28]
+// Elapsed time: 19 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 5, 330); // dT
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 2, 337); // dT
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 3, 327); // dT
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 252, 396, false, false, false, true, false); // dT - Popup Trigger
+selectMenuItem(RDIResource.TclConsoleView_COPY, "Copy"); // ar
+// Elapsed time: 12 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 529, 436); // dT
+// Elapsed time: 47 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, edge_detection_IP.sv]", 2, false); // D
+// Elapsed time: 143 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 230, 212, 1225, 624, false, false, false, true, false); // hw - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_IP, "Add IP..."); // ar
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField
+// HMemoryUtils.trashcanNow. Engine heap size: 2,251 MB. GUI used memory: 109 MB. Current time: 5/29/25, 12:04:08 AM CEST
+// Elapsed time: 3084 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ar
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, (String) null); // aa
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // cm
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "RGB-Grayscale"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 13 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open /home/muzamilfarid/Coraz7_Projects/Image-Processing-Systen-with-realtime-Camera/Image_Processing_System/Image_Processing_System.srcs/sources_1/new/RGB-Grayscale.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /home/muzamilfarid/Coraz7_Projects/Image-Processing-Systen-with-realtime-Camera/Image_Processing_System/Image_Processing_System.srcs/sources_1/new/RGB-Grayscale.sv 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // I
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,354 MB. GUI used memory: 95 MB. Current time: 5/29/25, 12:30:48 AM CEST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,386 MB. GUI used memory: 95 MB. Current time: 5/29/25, 12:31:33 AM CEST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,415 MB. GUI used memory: 95 MB. Current time: 5/29/25, 12:32:08 AM CEST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,435 MB. GUI used memory: 95 MB. Current time: 5/29/25, 12:32:28 AM CEST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 2,456 MB (+3869kb) [01:09:01]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,456 MB. GUI used memory: 95 MB. Current time: 5/29/25, 12:33:53 AM CEST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,484 MB. GUI used memory: 95 MB. Current time: 5/29/25, 12:39:03 AM CEST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,516 MB. GUI used memory: 95 MB. Current time: 5/29/25, 12:41:58 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,463 MB. GUI used memory: 95 MB. Current time: 5/29/25, 1:11:58 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,463 MB. GUI used memory: 94 MB. Current time: 5/29/25, 1:41:58 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,463 MB. GUI used memory: 94 MB. Current time: 5/29/25, 2:11:58 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,463 MB. GUI used memory: 94 MB. Current time: 5/29/25, 2:41:58 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,463 MB. GUI used memory: 94 MB. Current time: 5/29/25, 3:11:58 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,463 MB. GUI used memory: 94 MB. Current time: 5/29/25, 3:41:58 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,463 MB. GUI used memory: 94 MB. Current time: 5/29/25, 4:11:59 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,463 MB. GUI used memory: 94 MB. Current time: 5/29/25, 4:41:59 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,463 MB. GUI used memory: 94 MB. Current time: 5/29/25, 5:11:59 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,463 MB. GUI used memory: 94 MB. Current time: 5/29/25, 5:41:59 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,463 MB. GUI used memory: 94 MB. Current time: 5/29/25, 6:11:59 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,464 MB. GUI used memory: 94 MB. Current time: 5/29/25, 6:41:59 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,464 MB. GUI used memory: 94 MB. Current time: 5/29/25, 7:11:59 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,464 MB. GUI used memory: 94 MB. Current time: 5/29/25, 7:41:59 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,464 MB. GUI used memory: 94 MB. Current time: 5/29/25, 8:11:59 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,464 MB. GUI used memory: 94 MB. Current time: 5/29/25, 8:41:59 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,464 MB. GUI used memory: 94 MB. Current time: 5/29/25, 9:11:59 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,464 MB. GUI used memory: 94 MB. Current time: 5/29/25, 9:42:00 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,464 MB. GUI used memory: 94 MB. Current time: 5/29/25, 10:12:00 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,464 MB. GUI used memory: 94 MB. Current time: 5/29/25, 10:42:00 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,464 MB. GUI used memory: 94 MB. Current time: 5/29/25, 11:12:00 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,464 MB. GUI used memory: 94 MB. Current time: 5/29/25, 11:42:00 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,464 MB. GUI used memory: 94 MB. Current time: 5/29/25, 12:12:00 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,464 MB. GUI used memory: 94 MB. Current time: 5/29/25, 12:42:00 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,464 MB. GUI used memory: 94 MB. Current time: 5/29/25, 1:12:00 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,464 MB. GUI used memory: 94 MB. Current time: 5/29/25, 1:42:00 PM CEST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,549 MB. GUI used memory: 94 MB. Current time: 5/29/25, 1:47:10 PM CEST
+// Elapsed time: 47845 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ar
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "Pixel_Assembler"); // aa
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // cm
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 17 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open /home/muzamilfarid/Coraz7_Projects/Image-Processing-Systen-with-realtime-Camera/Image_Processing_System/Image_Processing_System.srcs/sources_1/new/Pixel_Assembler.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /home/muzamilfarid/Coraz7_Projects/Image-Processing-Systen-with-realtime-Camera/Image_Processing_System/Image_Processing_System.srcs/sources_1/new/Pixel_Assembler.sv 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // I
+// [Engine Memory]: 2,580 MB (+508kb) [14:22:52]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,588 MB. GUI used memory: 94 MB. Current time: 5/29/25, 1:47:45 PM CEST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,614 MB. GUI used memory: 94 MB. Current time: 5/29/25, 1:48:30 PM CEST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,646 MB. GUI used memory: 94 MB. Current time: 5/29/25, 1:49:20 PM CEST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,679 MB. GUI used memory: 94 MB. Current time: 5/29/25, 1:50:05 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,626 MB. GUI used memory: 94 MB. Current time: 5/29/25, 2:20:05 PM CEST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 2,711 MB (+2410kb) [15:05:54]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,711 MB. GUI used memory: 94 MB. Current time: 5/29/25, 2:30:45 PM CEST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,740 MB. GUI used memory: 94 MB. Current time: 5/29/25, 2:31:05 PM CEST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,797 MB. GUI used memory: 94 MB. Current time: 5/29/25, 2:32:05 PM CEST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
