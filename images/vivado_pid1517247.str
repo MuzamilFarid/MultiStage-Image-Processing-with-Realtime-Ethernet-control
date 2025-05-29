@@ -491,3 +491,4 @@ dismissDialog("Define Module"); // I
 // TclEventType: FILE_SET_CHANGE
 // TclEventType: DG_GRAPH_STALE
 // TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,770 MB. GUI used memory: 95 MB. Current time: 5/29/25, 3:02:05 PM CEST
