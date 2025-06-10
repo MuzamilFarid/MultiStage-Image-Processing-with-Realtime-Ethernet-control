@@ -80,3 +80,8 @@ update_compile_order -fileset sources_1
 close [ open /home/muzamilfarid/Coraz7_Projects/Image-Processing-Systen-with-realtime-Camera/Image_Processing_System/Image_Processing_System.srcs/sources_1/new/Pixel_Assembler.sv w ]
 add_files /home/muzamilfarid/Coraz7_Projects/Image-Processing-Systen-with-realtime-Camera/Image_Processing_System/Image_Processing_System.srcs/sources_1/new/Pixel_Assembler.sv
 update_compile_order -fileset sources_1
+save_bd_design
+Wrote  : </home/muzamilfarid/Coraz7_Projects/Image-Processing-Systen-with-realtime-Camera/Image_Processing_System/Image_Processing_System.srcs/sources_1/bd/Ov7670_Image_Proc_System/Ov7670_Image_Proc_System.bd> 
+Wrote  : </home/muzamilfarid/Coraz7_Projects/Image-Processing-Systen-with-realtime-Camera/Image_Processing_System/Image_Processing_System.srcs/sources_1/bd/Ov7670_Image_Proc_System/ui/bd_34243694.ui> 
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 29 19:21:29 2025...

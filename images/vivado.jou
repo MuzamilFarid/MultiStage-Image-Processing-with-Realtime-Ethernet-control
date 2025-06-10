@@ -38,3 +38,4 @@ update_compile_order -fileset sources_1
 close [ open /home/muzamilfarid/Coraz7_Projects/Image-Processing-Systen-with-realtime-Camera/Image_Processing_System/Image_Processing_System.srcs/sources_1/new/Pixel_Assembler.sv w ]
 add_files /home/muzamilfarid/Coraz7_Projects/Image-Processing-Systen-with-realtime-Camera/Image_Processing_System/Image_Processing_System.srcs/sources_1/new/Pixel_Assembler.sv
 update_compile_order -fileset sources_1
+save_bd_design
