@@ -29,15 +29,17 @@ module RGB-Grayscale(
    input logic[7:0] R,
    input logic[7:0] G,
    input logic[7:0] B,
+   input logic pixel_valid,
    output logic [7:0] GRAY_pixel_data,
 
     );
 
 
 
-assign GRAY_pixel_data = (R*77 + G*150 + B*29) >> 8;
-
-
-
-
+    always_ff @( posedge PCLK or negedge rst ) begin
+        if (!rst)
+            GRAY_pixel_data <= 0;
+        else if (pixel_valid)
+        GRAY_pixel_data <= (R*77 + G*150 + B*29) >> 8;
+    end
 endmodule
